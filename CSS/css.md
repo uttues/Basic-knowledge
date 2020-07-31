@@ -82,6 +82,15 @@ flex可以用来解决一些比较复杂的布局（以前用float、position）
 
 不论是margin-top/right/bottom/left 一律相对于**父元素的宽度**
 
+* 如果父元素中没有内容，则会一直向上追溯，最终以浏览器视口为参考点
+
+
+
+### 绝对定位的基准点
+
+- `position: absolute;` 相对于relative容器的content
+- `position: absolute; top: 0; left: 0;` 相对于border以内，padding的外侧
+
 
 
 ## css3中可直接影响JS事件的属性
